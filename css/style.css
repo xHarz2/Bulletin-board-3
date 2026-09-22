@@ -1,0 +1,106 @@
+/* 
+   Глобальний reset та Box Model
+  */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333333; /* Темний текст */
+    background-color: #f5f0e6; /* Нейтральний крафтовий відтінок фону */
+}
+
+header {
+    background-color: #4e342e; /* Темне дерево для шапки */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #8d6e63;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 2.2rem;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px; /* Відступи між пунктами меню */
+    font-weight: 500;
+}
+
+/* Кнопка "Додати оголошення" */
+header nav a.btn-add {
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #d35400;
+    display: inline-block;
+}
+
+header nav a.btn-add:hover {
+    background-color: #e67e22; /* Зміна кольору при наведенні */
+}
+
+main {
+    max-width: 800px; /* Обмеження ширини контенту */
+    margin: 0 auto; /* Центрування колонки по горизонталі */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px; /* Відступи між секціями */
+}
+
+/* Стилізація форми фільтра */
+form {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #d7ccc8;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #d7ccc8;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #4e342e;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    background-color: #e0e0e0; /* Сірий фон для картинок, поки їх немає */
+    display: block;
+}
+
+aside#ad-details {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 25px;
+    border: 2px dashed #8d6e63; /* Рамка для aside за завданням */
+    background-color: #efebe1; /* Візуально відмінний фон */
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem; /* Менший розмір шрифту */
+    color: #795548; /* Приглушений колір тексту */
+    background-color: #eaddc5;
+}
